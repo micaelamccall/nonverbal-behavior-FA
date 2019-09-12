@@ -1,10 +1,3 @@
----
-title: "README.md"
-author: "Micaela"
-date: "9/12/2019"
-output: html_document
----
+# Nonverbal behavior FA
 
-#nonverbal behavior FA
-
-##R | tidyr | dplyr | psych 
+## R | tidyr | dplyr | psych 
