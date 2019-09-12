@@ -7,11 +7,12 @@ temp<-tempfile()
 #download file:
 download.file(url, temp)
 
-#unzip and load data
-data<-read.delim(unzip(temp, "NIS_data/data.csv"))
+#unzip file
+unzip(temp)
 
-#save codebook as a txt in home dir
-write.table(readLines(unzip(temp, "NIS_data/codebook.txt")), "codebook.txt", row.names = F, col.names = F)
+
+#load data
+data<-read.delim("NIS_data/data.csv")
 
 #clean up
 rm(temp,url)
