@@ -1,7 +1,5 @@
 # Nonverbal behavior FA
-
 ## Language: R 
-* tidyr | dplyr | psych * 
-
+*Packages: tidyr | dplyr | psych* 
 
 
