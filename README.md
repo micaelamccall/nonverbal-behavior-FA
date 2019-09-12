@@ -1,4 +1,4 @@
-## Finding latent factors in numerous measures of nonverbal behavior
+## Factor analysis of nonverbal behavior
 ### Language: R 
 *Packages: tidyr | dplyr | psych* 
 
