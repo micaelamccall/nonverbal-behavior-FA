@@ -9,10 +9,10 @@ psych::fa.parallel(cor, n.obs = 3633, fm = "pa", fa = "fa", cor = "poly")
 
 #oblique rotatins allow factors to be correlated. Because factors in this dataset are all related to a common construct and are likely to be correlated, I chose to use the "oblimin" rotation, which is a standard oblique rotation and the default in the fa function.
 
-fac <- psych::fa(cor, nfactors=8, fm="pa", n.obs=1000, rotate="oblimin")
+fac <- psych::fa(cor, nfactors=8, fm="pa", n.obs=3633, rotate="oblimin")
 psych::fa.sort(fac$loadings)
 psych::fa.diagram(fac)
 
-fac2 <-psych::fa(cor, nfactors=7, fm="pa", n.obs=1000, rotate="oblimin")
+fac2 <-psych::fa(cor, nfactors=7, fm="pa", n.obs=3633, rotate="oblimin")
 psych::fa.sort(fac2$loadings)
 psych::fa.diagram(fac2)
