@@ -3,3 +3,5 @@ tidyr
 psych
 GPArotation
 unzip
+MVN
+polycor
