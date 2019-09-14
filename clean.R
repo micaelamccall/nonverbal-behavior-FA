@@ -14,21 +14,9 @@ NIS_clean<-messy_data[1:5000, ]%>% #take just the first 10,000 observations of t
   filter_at(vars(c("VCL6", "VCL9","VCL12")), all_vars(.==0))%>% #these three variables are not real words. This keeps only observations where only all three were marked as unknown.
   filter_at(vars(starts_with("Q")), all_vars(.!=0))%>% #0 is not a valid option in the 1-5 likert scale for NIS items. This keeps only observations where none of the Qs were answered with 0.
   select(starts_with("Q"))%>% #retains only the NIS questions
-  mutate_all(as.factor)
-
-
+  mutate_all(as.numeric)
 summary(NIS_clean)
 colSums(is.na(NIS_clean))
-NIS_clean[NIS_clean==""]
-
-
-  
-
-m<-data.matrix(NIS_clean)
-t<-as.table(m)
-
-
-
 
 #checking the multivariate normality of the NIS variables using Henze-Zirkler's test and producing a qq plot
 mvn(NIS_clean[1:5000, ], mvnTest = "hz", multivariatePlot = "qq") #takes only 5,000 obs
