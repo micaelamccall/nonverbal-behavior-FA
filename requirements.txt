@@ -5,3 +5,4 @@ GPArotation
 unzip
 MVN
 polycor
+semPlot

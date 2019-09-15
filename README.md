@@ -1,12 +1,14 @@
 # Factor analysis of nonverbal behavior
 ### Language: R
-*Packages: tidyr | dplyr | psych* 
+*Data cleaning with dplyr, Likert scale analysis, Factor analysis with psych and polycor, visualization with semPlot and ggplot*
 
+
+### Run these lines to set the package requirements and version variables in RStudio. 
 ```{r}
-req<-readLines("requirements.txt")
-proj_version<-"R version 3.5.2 (2018-12-20)"
-`%notin%` <- Negate(`%in%`)
+req <- readLines("requirements.txt")
+proj_version <- "R version 3.5.2 (2018-12-20)"
 ```
 
+### Now run the setup.R file to install and attach packages
 
 
