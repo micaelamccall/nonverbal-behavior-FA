@@ -1,5 +1,5 @@
 ---
-title: "inspecting"
+title: "inspecting_factors"
 output: html_document
 ---
 
