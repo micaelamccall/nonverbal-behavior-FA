@@ -6,7 +6,7 @@
 ### Run these lines to set the package requirements and version variables in RStudio. 
 ```{r}
 req <- readLines("requirements.txt")
-proj_version <- "R version 3.5.2 (2018-12-20)"
+proj_version <- "R version 3.6.1 (2019-07-05)"
 ```
 
 ### Now run the setup.R file to install and attach packages
