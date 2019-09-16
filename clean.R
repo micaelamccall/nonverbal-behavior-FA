@@ -18,7 +18,7 @@ summary(NIS_clean)
 colSums(is.na(NIS_clean))
 
 #checking the multivariate normality of the NIS variables using Henze-Zirkler's test and producing a qq plot
-mvn(NIS_clean[1:5000, ], mvnTest = "hz", multivariatePlot = "qq") #takes only 5,000 obs
+mvn(NIS_clean[1:length(NIS_clean), ], mvnTest = "hz", multivariatePlot = "qq") #takes only 5,000 obs
 
 #they aren't normally distributed (which isnt surprising since this a likert scale dataset)
 #therefore, pincipal axis method of extracting factors should be used (Norris)
