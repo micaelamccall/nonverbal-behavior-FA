@@ -9,8 +9,7 @@ This saves the loadings to a dataFrame and renames the columns
 fa_loadings <- fac$loadings%>%
   as.table()%>%
   as.data.frame()%>%
-  filter(Freq>=0.3 | Freq<=-0.3)%>%
-  arrange(desc(Var2))
+  dplyr::filter(Freq>=0.3 | Freq<=-0.3)
 
 colnames(fa_loadings)<-c("Question", "Factor", "Loading")
 ```
@@ -54,6 +53,10 @@ This makes a semPlot object from the loadings, and create a visualization of the
 ```{r}
 model<-semPlotModel(fac$loadings)
 semPaths(model,what="par",whatLabels="est", rotation=4, minimum=0.3, sizeMan=5, sizeMan2 = 2, edge.width =.3)
+```
+```{r}
+model<-semPlot::semPlotModel(fac$loadings)
+semPlot::semPaths(model,what="par",whatLabels="est", rotation=4, minimum=0.3, sizeMan=25, sizeMan2 = 2, edge.width =.3, nodeLabels = c("look over or away from others", "avoid eye contact", "look directly", "maintain eye contact", "using gestures", "gesture", "am animated", "avoid gesturing", "sit or stand close", "move closer", "lead towards", "try not to sit or stand close", "lean away","use monotone or dull voice" ," monotonous voice", "bland facial expressions","relaxed body position", "tense body position","stiff","touch others on the shoulder", "move away when others touch me", "avoid touching others", "frown", "smile", "vocal expressions", "vocal variety", "PA4", "PA2", "PA3","PA1", "PA5", "PA6", "PA8", "PA7"), label.cex=(.5), label.scale=F)
 ```
 
 
