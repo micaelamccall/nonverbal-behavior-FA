@@ -27,12 +27,26 @@ OR
 
 - Install packages from inside the Jupter Notebook (running the first few cells) 
 
+# Usage
+
+## To use RStudio:
+- Individual scripts in `scripts` directory
+    - `import_data.R` imports and unzips data from website
+    - `clean_data.R` processes the data
+    - `perform_FA.R` creates the FA model
+    - `interpret_FA.R` explores the behaviors in the factors
+
+- `notebooks/nonverbal_behavior_FA.rmd` run all the code in a notebook (produces .html output)
+
+## Jupyter Notebook
+- `notebooks/nonverbal_behavior_FA.ipynb` run all the code in juypter notebook through the R kernel (which is part of the .yml env file)
+
 # Findings
 
 I found eight latent dimensions using the Principle Axis (PA) factoring method and oblique rotation (which allows the factors to be correlated). I named them conceptually:
 
     PA Factor 1:  "Flat affect", 
-    PA Factor 2: "Talking with hands", 
+    PA Factor 2:  "Talking with hands", 
     PA Factor 3:  "Close physical proximity", 
     PA Factor 4:  "Strong eye contact", 
     PA Factor 5:  "Stiff body position", 
