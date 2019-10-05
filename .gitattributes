@@ -1,1 +1,1 @@
-*.ipynb linguist-language=R
+notebooks/* linguist-vendored
