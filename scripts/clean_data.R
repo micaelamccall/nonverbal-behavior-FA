@@ -2,7 +2,6 @@
 
 #the word checks can be used to determine responses that aren't reliable (perhaps a person was not answering the survey thoughtfully or wasn't paying attention)
 
-#first the data was split to remove the TIPI questions
 
 #list column names:
 colnames(messy_data)

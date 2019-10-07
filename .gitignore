@@ -1,4 +1,8 @@
-.Rproj.user
+.Rproj.user/
 .Rhistory
 .RData
 .Ruserdata
+.ipynb_checkpoints
+.DS_Store
+.Rproj.user
+NIS_data
