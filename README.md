@@ -1,6 +1,6 @@
 # Habits of Non-verbal Intimacy: reducing number of dimensions using factor analysis
 
-*R, Data cleaning with dplyr, Likert scale analysis, Factor analysis with psych and polycor, visualization with semPlot and ggplot*
+*R | Data tidying | Unsupervised learning | Dimensionality reduction | Factor analysis | Visualization*
 
 # Intro
 
