@@ -12,24 +12,11 @@ Since my original dataset contains sensitive patient data, I used here results f
 
 This data is in the format of survey ratings in which the respondants say how often they perform an action (never, rarely, occasionally, often, very often). This Likert-type data is widely encountered in psychology and market research. In these contexts, factor analysis is a useful tool for translating numerous responses into generalizable constructs and actional inferences (e.g. about a consumer's likelihood to display a certain type of behavior or buy a certain type of product).
 
-# Setup
-
-To run this project, you can use RStudio or run the Jupyter Notebook in a conda environment.
-
-
-## To use RStudio:
-- Clone this repo and run setup.R to install and attach the required packages
-
-## To run the Jupyter Notebook in an conda environment: 
-- Create my R environment from the environment.yml by cloning the repo, stepping into this project directory in the terminal, and running `conda env create -f environment.yml`
-
-OR
-
-- Install packages from inside the Jupter Notebook (running the first few cells) 
 
 # Usage
 
 ## To use RStudio:
+- Clone this repo and run setup.R to install and attach the required packages
 - Individual scripts in `scripts` directory
     - `import_data.R` imports and unzips data from website
     - `clean_data.R` processes the data
@@ -38,7 +25,9 @@ OR
 
 - `notebooks/nonverbal_behavior_FA.rmd` run all the code in a notebook (produces .html output)
 
-## Jupyter Notebook
+## To run the Jupyter Notebook in a conda environment:
+- Create my R environment from the environment.yml by cloning the repo, stepping into this project directory in the terminal, and running `conda env create -f environment.yml`
+- OR Install packages from inside the Jupter Notebook (running the first few cells) 
 - `notebooks/nonverbal_behavior_FA.ipynb` run all the code in juypter notebook through the R kernel (which is part of the .yml env file)
 
 # Findings
