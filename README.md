@@ -56,3 +56,17 @@ I found eight latent dimensions using the Principle Axis (PA) factoring method a
 
 ## Map of the loadings of each survey response to each PA factor:
 ![loadings_plot.png](img/loadings_plot.png)
+
+
+# Future 
+
+An exploratory factor analysis can be used to create a model to generate scores for each observation on each new dimension (factor). This is useful for feature extraction and engineer for future data analysis. 
+
+# References
+
+Courtney, Matthew Gordon Ray. (2013). Determining the Number of Factors to Retain in EFA: Using the SPSS R-Menu v2.0 to Make More Judicious Estimations. *Practical Assessment, Research & Evaluation, 18*(8).
+
+Norris, Megan and Luc Lecavelier. (2010). Evaluating the Use of Exploratory Factor Analysis in Developmental Disability Psychological Research. *J Autism Dev Disord, 40,* 8–20. 
+
+Zygmont, Conrad and Mario R. Smith (2014). Robust factor analysis in the presence of normality violations, missing data, and outliers: Empirical questions and possible solutions. *The Quantitative Methods for Psychology, 10*(1), 40-55.
+
