@@ -44,7 +44,7 @@ I found eight latent dimensions using the Principle Axis (PA) factoring method a
     PA Factor 8:  "Positive affect"
 
 ## Map of the loadings of each survey response to each PA factor:
-![loadings_plot.png](img/loadings_plot.png)
+![loadings_plot.png](fig/loadings_plot.png)
 
 
 # Future 
